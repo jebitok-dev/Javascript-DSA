@@ -13,3 +13,5 @@ ids.add(1);
 for(const el of ids) {
   console.log(el)
 }
+
+console.log(ids.has(1))
