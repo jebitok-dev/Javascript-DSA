@@ -1,0 +1,1 @@
+const clubs = ["chelsea", "manchester united", "arsenal", "mancity", "liverpool"]
