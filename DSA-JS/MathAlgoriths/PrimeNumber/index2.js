@@ -5,7 +5,7 @@ function isPrime(n) {
   if(n < 2) {
     return false
   } 
-  for(let i = 2; i < n; i++) { // executes
+  for(let i = 2; i < Math.sqrt(n); i++) { // executes
     if(n % i === 0) {
       return false;
     } 
@@ -22,7 +22,7 @@ console.log(isPrime(27)) // true
 console.log(isPrime(100)) // false
 console.log(isPrime(167)) // true
 
-// Big-O - O(n)
+// Big-O - O(Math.sqrt(n)) - better time complexity
 
 
 
