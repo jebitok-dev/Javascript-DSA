@@ -21,3 +21,5 @@ console.log(isPowerOfTwo(7)) // false
 console.log(isPowerOfTwo(8)) // true
 console.log(isPowerOfTwo(9)) // false
 console.log(isPowerOfTwo(10)) // false
+
+// Big-O = O(logn)
