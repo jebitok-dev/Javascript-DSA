@@ -1,0 +1,1 @@
+// Given a sorted array of n elements and a target, element t finds the index of t in the array. Return -1 if the target element is not found 
