@@ -20,3 +20,5 @@ function quickSort(arr) {
 
 const arr = [-6, 20, 8, -2, 4];
 console.log(quickSort(arr)) // [-6, -2, 4, 8, 20]
+// Big-O - average case - O(nlogn) - quicksort
+// Worst case - O(n^2) 
