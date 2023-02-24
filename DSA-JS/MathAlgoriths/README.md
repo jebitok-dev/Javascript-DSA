@@ -103,3 +103,18 @@ if remainder is not 0 in any step n is not a power of 2
 3 - 0100
 0 - 0000
 ```
+
+## Recursion
+
+- recursion is a problem-solving technique where the solution depends on solutions to smaller instances of the same problem.
+- It is when a function calls itself
+- It’s a great technique to simplify your solution
+- It’s useful when you are finding yourself breaking down your problem into smaller versions of the same problem
+- (For example) The number of students is the total number of students in class A + B + C + D
+
+### Key points about Recursion
+
+- every recursive solution needs to have a base case - condition to terminate the recursion
+- might simplify solving a problem but it doesn’t always translate to a faster solution. A recursive solution may be far worse compared to an iterative one
+- recursion is a topic that is not the most straightforward to understand. Don’t give up if you struggle with the concept
+- (Need to cover Fibonacci & factorial to understand this well)
