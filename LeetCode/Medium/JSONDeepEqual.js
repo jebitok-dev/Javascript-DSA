@@ -14,6 +14,13 @@ function areDeeplyEqual(o1, o2) {
     if(!o2.hasOwnProperty(key) || !areDeeplyEqual(o1[key], o2[key])) {
       return false;
     }
+
+    var value1 = o1[key];
+    var value2 = o2[key] || o2[Number(key)];
+
+    if(!areDeeplyEqual(value1, value2)) {
+      return false;
+    }
   }
   return true;
 }
