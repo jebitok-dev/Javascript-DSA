@@ -28,9 +28,8 @@ export default function SearchBox() {
 				return fetch(`https://dummyjson.com/products/search?q=${search}`).then(
 					(res) => res.json()
 				);
-			} else {
-				return {products: []};
 			}
+			return { products: [] };
 		},
 	});
 
