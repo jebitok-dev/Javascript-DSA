@@ -11,6 +11,11 @@ function App() {
 		setCollection([...new Set(GalleryData.map((item) => item.title))]);
 	}, []);
 
+	const galleryFilter = (itemData) => {
+		const filterData = GalleryData.filter((item) => item.title == itemData);
+		setData(filterData)
+	}
+
 	console.log(data);
 	console.log(collection);
 
@@ -20,10 +25,10 @@ function App() {
 				<div className='galleryWrapper'>
 					<div className='filterItem'>
 						<ul>
-							<button></button>
+							<button onClick={() => setData(GalleryData)}>All</button>
 							{collection.map((item) => (
 								<li>
-									<button>{item}</button>
+									<button onClick={() => {galleryFilter(item)}}>{item}</button>
 								</li>
 							))}
 						</ul>
